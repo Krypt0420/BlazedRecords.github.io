@@ -1,0 +1,471 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#aa0000, black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Playfair Display; 
+}
+
+header {
+    width: 85%;
+    height: 95%;
+    border: 1px solid #f5f5f5; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header .menu_slide, .song_slide {
+    position: relative;
+    width: 25%;
+    height: 90%;
+/*  border: 1px solid #fff; */
+    background-color: #000;
+    box-shadow: 5px 0px 2px #090f1f;
+    color: #f5f5f5;
+    overflow: hidden;
+}
+
+header .song_slide {
+    width: 75%;
+    background: #000;
+}
+
+header .master_play {
+    width: 100%;
+    height: 10%;
+    background: #000;
+    box-shadow: 0px 3px 8px #090f1f;
+
+}
+
+header .menu_slide h1 {
+    font-size: 25px;
+    margin: 15px 0px 0px 20px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+}
+
+header .menu_slide .playlist {
+    margin: 40px 0px 0px 20px;
+}
+
+header .menu_slide .playlist h4 {
+    font-family: Playfair Display;
+    font-weight: 400;
+    padding-bottom: 10px;
+    color: #4c5262;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: .25s linear;
+}
+
+header .menu_slide .playlist h4:hover {
+    color: #f5f5f5;
+}
+
+header .menu_slide .playlist h4 span {
+    position: relative;
+    margin-right: 25px;
+}
+
+header .menu_slide .playlist h4 span::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border: 2px solid #4c5262;
+    border-radius: 50%;
+    top: -4px;
+    transition: .25s;
+}
+
+header .menu_slide .playlist h4:hover span::before {
+    border: 2px solid #f5f5f5;
+}
+
+header .menu_slide .playlist h4 .SMD {
+    display: none;
+}
+
+header .menu_slide .playlist .active {
+    color: #aa0000;
+}
+
+header .menu_slide .playlist .active span{
+    display: none;
+}
+
+header .menu_slide .playlist .active .SMD {
+    display: flex;
+    margin-right: 9px;
+}
+
+header .menu_slide .menu_song {
+    width: 100%;
+    height: 300px;
+/*  border: 1px solid #f5f5f5; */
+    margin-top: 40px;
+}
+
+header .menu_slide .menu_song li {
+    position: relative;
+    list-style-type: none;
+    padding: 5px 0px 5px 20px;
+    font-size: 1em;
+    font-family: Montserrat;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: .12.5s linear;
+}
+
+header .menu_slide .menu_song li:hover {
+    background: rgb(105, 105, 170,.1);
+}
+
+
+header .menu_slide .menu_song li span {
+    font-size: 12px;
+    font-weight: 600;
+    color: #4c5262;
+}
+
+header .menu_slide .menu_song li img {
+    width: 32px;
+    height: 32px;
+    margin-left: 25px;
+}
+
+header .menu_slide .menu_song li h5 {
+    font-size: 11px;
+    margin-left: 15px;
+}
+
+header .menu_slide .menu_song li h5 .subtitle {
+    font-size: 9px;
+    color: #4c5262;
+}
+
+header .menu_slide .menu_song li .SMD {
+    position: absolute;
+    right: 15px;
+    top: 6px;
+    font-size: 28px;
+}
+
+header .master_play {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+header .master_play .wave {
+    width: 30px;
+    height: 30px;
+/*  border: 1px solid #f5f5f5; */
+    padding-bottom: 5px;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 10px;
+}
+
+header .master_play .wave .wave1 {
+    width: 3px;
+    height: 10px;
+    margin-right: 3px;
+    border-radius: 10px 10px 0px 0px;
+    background: #aa0000;
+    animation: unset;
+}
+
+header .master_play .wave .wave1:nth-child(2) {
+    height: 13px;
+    animation-delay: .4s;
+}
+
+header .master_play .wave .wave1:nth-child(3) {
+    height: 8px;
+    animation-delay: .8s;
+}
+
+header .master_play .active2 .wave1 {
+    animation: wave .5s linear infinite;
+}
+
+header .master_play .active2 .wave1:nth-child(2) {
+    animation-delay: .4s;
+}
+
+header .master_play .active2 .wave1:nth-child(3) {
+    animation-delay: .8s;
+}
+
+@keyframes wave {
+    0%{
+        height: 10px;
+    }
+    50%{
+        height: 15px;
+    }
+    100%{
+        height: 10px;
+    }
+}
+
+header .master_play img {
+    width: 35px;
+    height: 35px;
+}
+
+header .master_play h5 {
+    width: 130px;
+    font-size: 13px;
+    margin-left: 15px;
+    color: #f5f5f5;
+    line-height: 15px;
+    font-family: Montserrat;
+}
+
+header .master_play h5 .subtitle {
+    font-size: 11px;
+    color: #4c5262;
+    font-family: Montserrat;
+}
+
+header .master_play .icon {
+    font-size: 20px;
+    color: #f5f5f5;
+    margin: 0px 20px 0px 40px;
+}
+
+header .master_play .icon .SMD {
+    cursor: pointer;
+    outline: none;
+}
+
+header .master_play .icon .SMD:nth-child(2) {
+    border-radius: 50%;
+    padding: 1px 3px 0px 6px;
+    margin: 0px 5px;
+    transition: .25s linear;
+}
+
+header .master_play span {
+    color: #f5f5f5;
+    width: 16px;
+    font-size: 11px;
+    font-weight: 400;
+    font-family: Montserrat;
+}
+
+header .master_play #currentStart {
+    margin: 0px 15px 0px 10px;
+}
+
+header .master_play .bar {
+  position: relative;
+  width: 43%;
+  height: 2px;
+  background: rgb(105, 105, 170,.1);
+  margin: 0px 15px 0px 10px;
+}
+
+header .master_play .bar .bar2 {
+    position: absolute;
+    background: #aa0000;
+    width: 0%;
+    height: 100%;
+    top: 0;
+}
+
+header .master_play .bar .dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #aa0000;
+    border-radius: 50%;
+    top: -1px;
+    transition: 1s linear;
+}
+
+header .master_play .bar .dot::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #aa0000;
+    border-radius: 50%;
+    left: 0px;
+    top: -5.75px;
+    box-shadow: inset 0px 0px 100px #aa0000;
+}
+
+header .master_play .bar input {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -6.75px;
+    cursor: pointer;
+    z-index: 99999999;
+    transition: 3s linear;
+    opacity: 0;
+}
+
+header .master_play .vol {
+  position: relative;
+  width: 100px;
+  height: 2px;
+  margin-left: 25px;
+  background: rgb(105, 105, 170,.1);
+}
+
+header .master_play .vol .SMD{
+    position: absolute;
+    width: 100px; 
+    font-size: 25;
+    top: -17px;
+    left: -30px;
+    display: none;
+}
+
+header .master_play .vol input {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -6.75px;
+    cursor: pointer;
+    z-index: 99999999;
+    transition: 3s linear;
+    opacity: 0;
+}
+
+header .master_play .vol .vol_bar {
+    position: absolute;
+    background: #aa0000;
+    width: 0%;
+    height: 100%;
+    top: 0;
+}
+
+header .master_play .vol .dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #aa0000;
+    border-radius: 50%;
+    top: -1px;
+    transition: 1s linear;
+}
+
+header .master_play .vol .dot::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #aa0000;
+    border-radius: 50%;
+    left: 0px;
+    top: -5.75px;
+    box-shadow: inset 0px 0px 100px #aa0000;
+}
+
+header .song_slide {
+    z-index: 2;
+}
+
+header .song_slide nav {
+    width: 90%;
+    height: 10%;
+    margin: auto;
+/*  border: 1px solid #f5f5f5; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .song_slide nav ul {
+    display: flex;
+}
+
+header .song_slide nav ul li {
+    position: relative;
+    list-style-type: none;
+    font-size: 24px;
+    color: #4c5262;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: .25s linear;
+}
+
+header .song_slide nav ul li:hover {
+    color: #f5f5f5;
+}
+
+header .song_slide nav ul li:nth-child(1) {
+    color: #f5f5f5;
+}
+
+header .song_slide nav ul li span {
+    position: absolute;
+    width: 100%;
+    height: 2.5px;
+    background: #aa0000;
+    bottom: -5px;
+    left: 0;
+    border-radius: 20px;
+}
+
+header .song_slide nav .search {
+    position: absolute;
+    width: 30%;
+    padding: 1px 20px;
+    border-radius: 20px;
+    color: gray;
+    right: 150px;
+    top: 15px;
+    height: 25px;
+}
+
+header .song_slide nav .searchtext {
+    content: '';
+    position: absolute;
+    width: 30%;
+    padding: 0px 10px;
+    border: none;
+    color: #f5f5f5;
+    right: 130px;
+    top: 15px;
+    height: 25px;
+    outline: none;
+    background: none;
+    
+}
+
+header .song_slide nav .SMD_search {
+    position: absolute;
+    right: 380px;
+    top: 15.75px;
+    font-size: 25px;
+}
+
+header .song_slide nav .search::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: rgb(105, 105, 170,.1);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}

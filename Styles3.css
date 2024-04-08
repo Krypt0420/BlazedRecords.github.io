@@ -1,0 +1,142 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#aa0000, black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+}
+
+.container {
+  background-color: white;
+  max-width: 1000px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #aa0000;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #8c0000;
+}
+
+#error {
+  color: red;
+  display: none;
+  margin-top: 10px;
+}
+
+#linkContainer {
+  display: none;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#specialLink {
+  color: #100;
+  text-decoration: none;
+  font-weight: bold;
+  transition: .25s linear;
+  align-self: center;
+  margin-left: 75px;
+}
+
+#specialLink:hover {
+  color: #aa0000;
+}
+
+#successMessage {
+  background-color: white;
+  color: #000;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  font-size: 48px;
+}
+
+
+.congrats {
+  color: whitesmoke;
+  align-items: center;
+  position: absolute;
+  top: 50px;
+}
+
+.congrats2 {
+  color: whitesmoke;
+  align-items: center;
+  position: absolute;
+  top: 125px;
+}
+
+.BLSPDlink {
+  color: whitesmoke;
+  align-items: center;
+  position: absolute;
+  top: 200px;
+  left: 575px;
+}
+
+.BLSPDlink {
+  color: whitesmoke;
+  align-items: center;
+  position: absolute;
+  top: 200px;
+  left: 575px;
+  transition: .25s linear;
+}
+
+.BLSPDlink:hover {
+  color: #4dff00;
+}
+
+.icon {
+  font-size: 2.5em;
+  color: whitesmoke;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  transition: .25s linear;
+}
+
+.icon:hover {
+  color: #4dff00;
+}

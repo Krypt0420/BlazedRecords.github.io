@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>
+    Blazed Records™ | Merch 
+  </title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+  <header>
+    <a href="index.html" style="text-decoration: none;"><h2 class="logo">Blazed Records™</h2></a>
+    <nav class="navigation" id="originalNav">
+      <a href="Music.html">Music</a>
+      <a href="Merch.html">Merch</a>
+      <a href="social.html">Social</a>
+      <a href="#">About</a>
+      <button class="btnLogin-popup">Login</button>
+    </nav>
+    <div class="dropdown" id="dropdownNav">
+      <button class="dropbtn" onclick="toggleDropdown()">☰</button>
+      <div class="dropdown-content">
+        <a href="Music.html">Music</a>
+        <a href="Merch.html">Merch</a>
+        <a href="social.html">Social</a>
+        <a href="#">About</a>
+      </div>
+    </div>
+  </header>  
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <center>
+ <br>
+ <h1 id="MT"> Merch </h1>
+ <hr>
+<a href="Item1.html">    
+ <img src="imgs/Dummy front.png" class="PI1">
+ <img src="imgs/Dummy back.png" class="PI2">
+</a>
+<br>
+<br>
+<br>
+<br>
+ </center>
+ <center>
+ <div class="wrapper">
+  <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+  <div class="form-box login">
+    <h2 style="color: whitesmoke;">Login</h2>
+    <form action="#">
+      <div class="input-box">
+        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+        <label style="color: whitesmoke;"></label>
+        <input type="email" style="color: whitesmoke;" placeholder="E-mail" minlength="10" maxlength="50" required>
+      </div>
+      <div class="input-box">
+        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+        <label style="color: whitesmoke;"></label>
+        <input type="password" style="color: whitesmoke;" placeholder="Password" minlength="3" maxlength="20" required>
+      </div>
+      <div class="remember-forgot">
+        <label style="color: whitesmoke;"><input type="checkbox"> Remember me?</label>
+        <a href="#"> Forgot Password? </a>
+      </div>
+      <button type="submit" class="btn"> Login </button> 
+      <br>
+      <div class="register-link">
+        <p style="color: whitesmoke;"> Don't have an account? <a href="Registration.html" class="register-link" style="color: whitesmoke;">Register</a></p>
+      </div>
+      <div class="wrapperr"></div>
+      <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+      <div class="form-box register">
+        <h2 style="color: whitesmoke;">Register</h2>
+        <form action="#">
+            <div class="input-boxx">
+            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+            <label style="color: whitesmoke;"></label>
+            <input type="text" style="color: whitesmoke;" placeholder="Username" minlength="3" maxlength="15" required>
+          </div>
+          <div class="input-boxx">
+            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+            <label style="color: whitesmoke;"></label>
+            <input type="email" style="color: whitesmoke;" placeholder="E-mail" minlength="10" maxlength="50" required>
+          </div>
+          <div class="input-boxx">
+            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+            <label style="color: whitesmoke;"></label>
+            <input type="password" style="color: whitesmoke;" placeholder="Password" minlength="3" maxlength="20" required>
+          </div>
+          <div class="terms-and-condtions">
+            <label style="color: whitesmoke;"><input type="checkbox"> I have read and have agreed to the <a href="#" style="color: whitesmoke;">term's and condtion's.</a></label>
+          </div>
+          <button type="submit" class="btn"> Sign Up </button> 
+          <br>
+          <div class="login-register">
+            <p style="color: whitesmoke;"> Already have an account? <a href="#" class="login-link" style="color: whitesmoke;">Login</a></p>
+          </div>
+    <hr>
+    </center>
+ </div>
+ <center>
+    <footer style="color: whitesmoke; font-size: 1em;">
+       Contact Information
+       <br>
+       Email - Officialblazedrecords@gmail.com
+       <br>
+       Phone - +61-480-386-114
+       <br>
+       <hr>  
+       Built and Designed by Tobie Southon
+       <br>
+       © 2024 Blazed Records™ All rights reserved.
+    </footer>
+    </center>
+</body>
+<script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+<script src="script.js"></script>
+
+</html>

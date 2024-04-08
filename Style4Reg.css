@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Playfair Display, Montserrat;
+}
+
+html{
+scroll-behavior: smooth;
+}
+
+.wrapper2 {
+  display: none;
+}
+
+.icon-close {
+  display: none;
+}
+
+body {
+  background: linear-gradient(#aa0000, black);
+}

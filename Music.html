@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+  <meta charset="UTF-8"
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <title> Blazed Music Player </title>
+ </head>
+<body>
+    <header>
+      <div class="menu_slide">
+        <h1> Playlist </h1>
+       <div class="playlist">
+           <h4 class="active"><span></span><ion-icon name="musical-notes" class="SMD"></ion-icon> Playlist</h4>
+           <h4><span></span><ion-icon name="musical-notes" class="SMD"></ion-icon> Listening last</h4>
+           <h4><span></span><ion-icon name="musical-notes" class="SMD"></ion-icon> Recommended</h4>
+        </div>
+        <div class="menu_song">
+         <li class="songItem">
+          <span>01</span>
+          <img src="_DSC0241.JPG" alt="picone">
+          <h5>
+            title...
+            <div class="subtitle">Artist...</div>
+            </h5>
+            <ion-icon name="play-circle-sharp" class="SMD playlistPlay" id="1"></ion-icon>
+          <li class="songItem">
+            <span>02</span>
+            <img src="_DSC0241.JPG" alt="picone">
+            <h5>
+              title...
+              <div class="subtitle">Artist...</div>
+            </h5>
+              <ion-icon name="play-circle-sharp" class="SMD playlistPlay" id="2"></ion-icon>
+           </li>
+           <li class="songItem">
+            <span>03</span>
+            <img src="_DSC0241.JPG" alt="picone">
+            <h5>
+              title...
+              <div class="subtitle">Artist...</div>
+            </h5>
+              <ion-icon name="play-circle-sharp" class="SMD playlistPlay" id="3"></ion-icon>
+           </li>
+           <li class="songItem">
+            <span>04</span>
+            <img src="_DSC0241.JPG" alt="picone">
+            <h5>
+              title...
+              <div class="subtitle">Artist...</div>
+              <ion-icon name="play-circle-sharp" class="SMD playlistPlay" id="4"></ion-icon>
+            </h5>
+           </li>
+           <li class="songItem">
+            <span>05</span>
+            <img src="_DSC0241.JPG" alt="picone">
+            <h5>
+              title...
+              <div class="subtitle">Artist...</div>
+            </h5>
+              <ion-icon name="play-circle-sharp" class="SMD playlistPlay" id="5"></ion-icon>
+           </li>
+         </li>
+        </div>
+      </div>
+
+      <div class="song_slide">
+        <nav>
+         <ul>
+         <li>Discover <span></span></li>
+         <li>Libary </li>
+         <li>Upload </li>
+         </ul>
+         <div class="search"></div>
+         <ion-icon name="search-sharp" class="SMD_search"></ion-icon>
+         <input type="text" placeholder="Search..." class="searchtext">
+        </nav>
+      </div>
+
+
+      <div class="master_play">
+        <div class="wave">
+         <div class="wave1"></div>
+         <div class="wave1"></div>
+         <div class="wave1"></div>
+        </div>
+        <img src="_DSC0241.JPG" alt="picone">
+        <h5>
+            title...
+            <div class="subtitle">Artist...</div>
+        </h5>
+        <div class="icon">
+         <ion-icon name="play-skip-back-sharp" class="SMD Backskip"></ion-icon>
+         <ion-icon name="play-sharp" class="SMD play"></ion-icon>
+         <ion-icon name="play-skip-forward-sharp" class="SMD Forwardskip"></ion-icon>
+        </div>
+        <span id="currentStart">00:00</span>
+        <div class="bar">
+        <input type="range" id="seek"  min="0" value="0" max="100">
+         <div class="bar2" id="bar2"></div>
+         <div class="dot"></div>
+
+        </div>
+        <span id="currentEnd">00:00</span>
+
+        <div class="vol">
+         <ion-icon name="volume-high-sharp" class="SMD volume"></ion-icon>
+        <input type="range" id="vol"  min="0" value="30" max="100">
+         <div class="vol_bar"></div>
+         <div class="dot" id="vol_dot"></div>
+        </div>
+      </div>
+      
+    </header>
+  <script src="app.js"></script>
+  <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+</body>
+
+</html>
+<!-- Link to yt vid - https://www.youtube.com/watch?v=JRta1R8lt8o&ab_channel=KDSCoder -->
